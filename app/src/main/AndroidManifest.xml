@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <!-- ✅ Add the permission here, outside <application> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature android:name="android.hardware.microphone" android:required="true"/>
+    <application
+
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/Theme.KidsEducationalGame"
+        tools:targetApi="31">
+
+        <!-- ✅ All activities set to landscape -->
+        <activity android:name=".MathPuzzleActivity" android:screenOrientation="landscape" />
+        <activity android:name=".ABCLearningActivity" android:screenOrientation="landscape" />
+        <activity android:name=".ShapeRecognitionActivity" android:screenOrientation="landscape" />
+        <activity android:name=".ColoringGameActivity" android:screenOrientation="landscape" />
+        <activity android:name=".MythologySectionActivity" android:screenOrientation="landscape" />
+        <activity android:name=".MathTeachingActivity" android:screenOrientation="landscape" />
+        <activity android:name=".MathWritingActivity" android:screenOrientation="landscape" />
+        <activity android:name=".MathChallengesActivity" android:screenOrientation="landscape" />
+        <activity android:name=".MatchThePairActivity" android:screenOrientation="landscape" />
+        <activity android:name=".TrainGameActivity" android:screenOrientation="landscape" />
+        <activity android:name=".ABCTeachingActivity" android:screenOrientation="landscape" />
+        <activity android:name=".ABCWritingActivity" android:screenOrientation="landscape" />
+        <activity android:name=".ABCChallengesActivity" android:screenOrientation="landscape" />
+        <activity android:name=".FindLetterActivity" android:screenOrientation="landscape" />
+        <activity android:name=".PopBalloonActivity" android:screenOrientation="landscape" />
+        <activity android:name=".MahabharataActivity" android:screenOrientation="landscape" />
+        <activity android:name=".RamayanaActivity" android:screenOrientation="landscape" />
+        <activity android:name=".GaneshaSectionActivity" android:screenOrientation="landscape" />
+        <activity android:name=".KrishnaSectionActivity" android:screenOrientation="landscape" />
+        <activity android:name=".MythologyQuizActivity" android:screenOrientation="landscape" />
+        <activity android:name=".ParentalDashboardActivity" android:screenOrientation="landscape" />
+        <activity android:name=".TrackProgressActivity" android:screenOrientation="landscape" />
+
+
+        <!-- ✅ MainActivity with launcher intent and landscape -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.KidsEducationalGame"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "481089953291",
+    "project_id": "kinderjoy-372c6",
+    "storage_bucket": "kinderjoy-372c6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481089953291:android:867f096d19e5722b79b10e",
+        "android_client_info": {
+          "package_name": "com.yourname.kidslearning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrOLNHapNHbRSAjVJVgsl59VdI3Wk3HF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
